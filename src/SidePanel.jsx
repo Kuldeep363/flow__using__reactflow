@@ -1,6 +1,7 @@
 import { Panel } from "reactflow";
 import { MessageOutlined } from "@ant-design/icons";
 
+// side bar item config
 const sideBarItems = [
   {
     label: "Message",

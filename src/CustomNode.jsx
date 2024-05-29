@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from "react";
 import { Handle, Position } from "reactflow";
 import WAImg from "./assets/images/wa.png";
 import { MessageOutlined } from "@ant-design/icons";
-import CustomHandle from "./CustomHandle";
 
 export function CustomTextNode(props) {
   const onChange = useCallback((evt) => {
@@ -17,10 +16,9 @@ export function CustomTextNode(props) {
 
   return (
     <div className="text-updater-node">
-      <CustomHandle
+      <Handle 
         type="source"
         position={Position.Right}
-        isConnectable={props.isConnectable}
       />
       <div className="text-updater-node-header">
         <div className="text-updater-node-header-text">
@@ -41,12 +39,10 @@ export function CustomTextNode(props) {
           placeholder="Enter message"
           readOnly
         />
-        {/* <p className="node-value">{textNodeValue}</p> */}
       </div>
-      <CustomHandle
+      <Handle 
         type="target"
         position={Position.Left}
-        isConnectable={props.isConnectable}
       />
     </div>
   );

@@ -1,0 +1,135 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.text-updater-node {
+  width: 250px;
+  height: 65px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #9d9d9d;
+  overflow: hidden;
+}
+.text-updater-node-header {
+  /* width: 100%; */
+  padding: 3px 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b3efe3;
+}
+.text-updater-node-header-text,
+.setting__bar__heading {
+  display: flex;
+  align-items: center;
+}
+.setting__bar__heading {
+  padding: 3px 5px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.setting__bar__heading p {
+  width: 100%;
+  text-align: center;
+}
+.setting__bar__heading span {
+  cursor: pointer;
+}
+.text-updater-node-header-text p {
+  font-weight: 700;
+  margin: 0;
+  font-size: 15px;
+}
+.wa-logo {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  display: flex;
+}
+.wa-logo img {
+  width: 10px;
+}
+.text-updater-node input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.icon {
+  color: #4d4d4d;
+  width: 12px;
+}
+.message-icon {
+  margin-right: 5px;
+}
+#side-panel,
+#edit-panel {
+  width: 250px;
+  height: calc(100vh - 50px);
+  background-color: #fefefe;
+  margin: 0;
+  border-left: 2px solid #dfdfdf;
+  border-top: 2px solid #dfdfdf;
+  top: 50px;
+  padding: 5px;
+}
+#edit-panel {
+  padding: 0px;
+}
+#top-panel {
+  width: 100vw;
+  height: 50px;
+  background-color: #f3f3f3;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px;
+}
+.node-value {
+  padding: 10px;
+}
+button {
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #434d82;
+  cursor: pointer;
+  color: #434d82;
+}
+.SidebarItem {
+  width: 50%;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: grab;
+}
+.SidebarItem.customTextNode {
+  border-color: #434d82;
+  color: #434d82;
+}
+.react-flow__node.selected .text-updater-node {
+  border: 1px solid #434d82;
+}
+.node__toolbar {
+  top: 50px;
+  width: 150px;
+  height: calc(100vh - 50px);
+  background-color: #fefefe;
+}
+.setting__bar__input {
+  padding: 5px;
+}
+.setting__bar__input textarea {
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+.setting__bar__input small {
+  color: #626262;
+}
+.node__input {
+  pointer-events: none;
+}
